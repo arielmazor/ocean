@@ -210,43 +210,6 @@ function initStudyMaterials(){
 
 $( document ).ready(function() {
 
-	new Typed('#typed', {
-		stringsElement: '#typed-strings',
-		typeSpeed: 35,
-		backDelay: 1300,
-    backSpeed: 35,
-    showCursor: false,
-		// loop:true,
-		preStringTyped: function(pos, self) { 
-			$('.home .subjects').removeClass('show');
-			$('.home .subjects.arr' + pos).addClass('show');
-    },
-    onComplete: function(self){
-      $('.btn-replay').addClass('show');
-    }
-	});
-
-
-	$('.btn-replay').click(function(){
-    $('.btn-replay').removeClass('show');
-		$('.typed-cursor').remove();
-		$('#typed').empty();
-		new Typed('#typed', {
-			stringsElement: '#typed-strings',
-			typeSpeed: 35,
-			backDelay: 1400,
-      backSpeed: 35,
-      showCursor: false,
-			preStringTyped: function(pos, self) { 
-				$('.home .subjects').removeClass('show');
-				$('.home .subjects.arr' + pos).addClass('show');
-      },
-      onComplete: function(self){
-        $('.btn-replay').addClass('show');
-      }
-		});
-	})
-
 	initHeader();
 	initExpertise();
 	initOwlCarousel();
