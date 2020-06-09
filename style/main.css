@@ -70,7 +70,6 @@ h1 {
   font-size: 34px;
   text-transform: uppercase;
   color: black;
-padding-bottom: 5pc;
 }
 
 h2 {
@@ -554,6 +553,10 @@ header .pi-panel {
   padding-top:0;
 }
 
+.about-me .wrapper{
+  flex-direction: column;
+}
+
 .about-me .txt-wrapper{
   padding: 25px;
   margin: 45px 0 70px 0;
@@ -562,13 +565,13 @@ header .pi-panel {
 }
 
 .about-me .img-frame{   
-  border: 2px solid #F5C534;
+  border: 2px solid #F5C4;
   padding: 4%;
   max-width: 375px;
   margin: 0px 25px;
 }
 
-.about-me .img-frame img {
+.about-me .img-frame img
   display: block;
   width:100%;
   height: auto;
@@ -577,22 +580,63 @@ header .pi-panel {
 
 
 
-/* ------------------------------------------- */
-/* protfolio.                                     */
-/* ------------------------------------------- */
+/* ----------------------------------------- */
+/* protfolio.                                   */
+/* ----------------------------------------- */
 
 .protfolio{
   background: #d9d9d9;
 }
 
+.protfolio .wrapper{
+  padding-top: 50px;
+}
 .square{
   height: 300px;
   width: 300px;
   border: 3px solid black;
   margin: 11px;
   border-radius: 0.5px;
+  
+}
+/* ------------------------------------------- */
+/* Code                                      */
+/* ------------------------------------------- */
+
+.code{
+  width: 100%;
+}
+.code .row{
+  display: flex;
+  border-bottom: 1px solid #c7c7c7;
+  flex: 1;
+  width: 900px;
+  align-items: center;
 }
 
+.name-date{
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.code .wrapper{
+  flex-direction: column;
+  display: flex;
+  align-items: center ;
+  width: 100%;
+  padding-top: 70px;
+}
+.frindsnum{
+  height: 80px;
+  width: 80px;
+  padding-bottom: 20px;
+  margin-top: 5px;
+
+}
+.app-name{
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* ------------------------------------------- */
 /* footer                                      */
